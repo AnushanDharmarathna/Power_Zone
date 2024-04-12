@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Power Zone Fitness - Workout Machine</title>
+	<link rel="stylesheet" type="text/css" href="doc/navigation.css">
+	<link rel="shortcut icon" type="image/x-icon" href="doc/icon.png">
+	<style>
+	* {box-sizing: border-box;}
+	body {font-family: Verdana, sans-serif;}
+	.mySlides {display: none;}
+	img {vertical-align: middle;}
+
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 100%;
+	  position: relative;
+	  margin: auto;
+	}
+
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+
+	/* The dots/bullets/indicators */
+	.dot {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active {
+	  background-color: #717171;
+	}
+
+	/* Fading animation */
+	.fade {
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+
+	/* On smaller screens, decrease text size */
+	@media only screen and (max-width: 300px) {
+	  .text {font-size: 11px}
+	}
+
+
+	* {
+	  box-sizing: border-box;
+	}
+
+	body {
+	  background-color: black;
+	  padding: 20px;
+	  font-family: Arial;
+	  text-color:white;
+	}
+
+
+	.intro{
+		text-align:center;
+		color:white;
+		}
+	
+	.container {
+		position: relative;
+		width: 50%;
+	}
+
+	.image {
+	  opacity: 1;
+	  display: block;
+	  width: 500px;
+	  height: 400px;
+	  transition: .5s ease;
+	  backface-visibility: hidden;
+	}
+
+	.middle {
+	  transition: .5s ease;
+	  opacity: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  text-align: center;
+	}
+
+	* {
+	box-sizing: border-box;
+	}
+	:root {
+	  --background-color: black;
+	  --text-color: hsl(0, 0%, 100%);
+	}
+	body {
+	  margin: 0;
+	}
+	.wrapper {
+	  display: grid;
+	  place-content: center;
+	  background-color: var(--background-color);
+	  min-height: 30vh;
+	  font-family: "Oswald", sans-serif;
+	  font-size: clamp(1.0rem, 0rem + 10vw, 10rem);
+	  font-weight: 700;
+	  text-transform: uppercase;
+	  color: var(--text-color);
+	}
+
+	.wrapper > div {
+	  grid-area: 1/1/-1/-1;
+	}
+	.top {
+	  clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+	}
+	.bottom {
+	  clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+	  color: transparent;
+	  background: -webkit-linear-gradient(177deg, black 53%, var(--text-color) 65%);
+	  background: linear-gradient(177deg, black 53%, var(--text-color) 65%);
+	  background-clip: text;
+	  -webkit-background-clip: text;
+	  transform: translateX(-0.02em);
+	}
+
+	h1 {
+	  font-size: 50px;
+	  word-break: break-all;
+	  text-align: center;
+	  text-color:white;
+	}
+	
+	
+	.eq{
+		/*width:500px;
+		height:400px;*/
+		width:28vw;
+		height:50vh;
+		
+		}
+		
+	.topic {
+	background: linear-gradient(
+    to right, 
+    hsl(98 100% 62%), 
+    hsl(204 100% 59%)
+	);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  text-align: center;
+	}	
+
+	h4{
+	color:white;
+	text-align:center;
+	}
+	
+	li{
+	color:white;
+	position:relative;
+	margin-left:500px;
+	line-height: 1.8;
+	}
+	
+	h2{
+	font-size:2vw;
+	}
+	
+	li{
+	font-size:1.2vw;
+	}
+	
+	ul{
+	position:relative;
+	left:3vw;
+	}
+	
+
+	</style>
+	</head>
+	
+	<body>
+	<div class="topnav">
+    <img class="logo" src="doc/logo.png" width="130" height="25">
+    <a class="active" href="login.php">Log in / Register</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="membership_plans.html">Membership</a>
+    <a href="image_gallery.html">Gallery</a>
+    <a href="supplements.php">Supplements</a>
+    <a href="Equipments.html">Workout Machine</a>
+    <a href="home.html">Home</a>
+</div>
+
+	<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 3</div>
+	  <img src="doc/Equipments/eq1.png" style="width:100%">
+
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 3</div>
+	  <img src="doc/Equipments/eq2.png" style="width:100%">
+
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 3</div>
+	  <img src="doc/Equipments/eq3.png" style="width:100%">
+	 
+	</div>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	</div>
+
+
+
+	<script>
+	let slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("dot");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+	</script>
+
+	<section class="wrapper" style="font-size:6vw;">
+	  <div class="top">Equipments</div>
+	  <div class="bottom" aria-hidden="true">Equipments</div>
+	</section>
+	
+	
+	<p class="intro" style="font-size:1.1vw;">Will you make it to that last hill? Can you push yourself above and beyond your 
+	last competitor, and take the challenge further?<br> It’s hard if it doesn’t feel like the real thing.‎ 
+	If you don’t shift a real gear on a real road, riding across real routes along with real companions.‎<br> 
+	It’s time to unleash your athletic potential.‎ It’s time to shift to real riding.‎</p>
+	</div>
+	<hr>
+	<br><br>
+	
+	
+	
+	  <h2 class="topic"><img src="doc/Equipments/eq4.png" onmouseover="newImg(this)" onmouseout="oldImg(this)" align="left" class="eq">
+		<script>
+	  function newImg(e){
+		e.src = "doc/Equipments/eq5.jpg"
+	  }
+	  function oldImg(e){
+		e.src = "doc/Equipments/eq4.png"
+	  }
+	</script>
+	  4-Station Multi-gym with Leg Press</h2>
+  
+  
+	<ul type="disc">
+	
+		<li>Gym for exercise and workout at home; can be used by working professionals, men, women, students</li>
+		<li>HG-44 covers 8x8x8 feet space after installation total plates weight is 300lbs/137Kg & it CONSIST of 
+		24 plates & per plate weight is 12.5lbs/5.7Kg approximate & 1 to 4 persons can exercise at a time</li>
+		<li>Exercising at home Made easy & workout in comfort of home & saves time</li>
+		<li>Highly durable and long lasting product</li>
+		<li>Customer have to install the machine by themselves; Owner's manual provided inside the box, 
+		It is very simple and easy to install, online help for Installation is also available</li>
+		<li>Size: Product Size: 2200mm (L) x 2400mm (W) x 2100mm (H)</li>
+		<li>In-box Contents: home gym set</li>
+	
+	</ul>
+	<br><br><br><br>
+	<hr width="800vw" align="center">
+
+	<h2 class="topic"><img src="doc/Equipments/eq8.jpg" onmouseover="aImg(this)" onmouseout="bImg(this)" align="left" class="eq">
+		<script>
+	  function aImg(a){
+		a.src = "doc/Equipments/eq7.gif"
+	  }
+	  function bImg(a){
+		a.src = "doc/Equipments/eq8.jpg"
+	  }
+	</script>
+	  Horizontal Seated Leg Press</h2>
+	  
+	  
+	 <ul type="disc">
+		
+		<li>The Insignia Series Seated Leg Press features an upright positioned that is ideal for novices or deconditioned users. 
+		Force is transmitted through the user’s hips to the leg press, eliminating spinal compression. 
+		Premium Insignia Series selectorized strength equipment, such as this leg press, features intelligent touches and design elements that result in a natural feel and a truly memorable experience.</li>
+		<li>Product Name:Insignia Series Seated Leg Press</li>
+		<li>Product Code: SS-SLP</li>
+		<li>Dimensions: (L x W x H)	79.1" x 44.8" x 64.7" (201 cm x 114 cm x 164 cm)</li>
+		<li>Live Area: (L x W x H)	97.1" x 68.8" x 82.7" (247 cm x 175 cm x 210 cm)</li>
+		<li>Product Weight:	1,001 lb (454 kg)</li>
+		<li>Max User Weight:	300 lb (136 kg)</li>
+		
+	</ul>
+	<br><br><br><br>
+	<hr width="800vw" align="center">
+
+	<h2 class="topic"><img src="doc/Equipments/eq10.jpg" onmouseover="cImg(this)" onmouseout="dImg(this)" align="left" class="eq">
+		<script>
+	  function cImg(a){
+		a.src = "doc/Equipments/eq9.gif"
+	  }
+	  function dImg(a){
+		a.src = "doc/Equipments/eq10.jpg"
+	  }
+	</script>
+	  Lat Pulldown</h2>
+	  
+	  
+	 <ul type="disc">
+		
+		
+		<li>If you’re interested in ever doing a pull-up, 
+		this is a great place to start. You’ll build your back muscles and start activating the entire posterior chain.</li>
+		<li>Beginners can start with an under grasp (palms facing you), which uses more biceps and tends to be a little easier</li>
+		<li>Hi-low pulley system permits versatile use.</li>
+		<li>1” diameter loading bar accepts both standard and Olympic plates (with adapter).</li>
+		<li>Optional 200 lbs weight stack kit available (#48056).</li>
+		<li>Optional 2” Olympic Adapter Sleeve available for use with Olympic Plates (#48010).</li>
+		<li>Weight:	184 lbs</li>
+		<li>Dimensions:	84 × 27 × 15 in</li>
+		
+		
+	</ul>
+	<br><br><br><br>
+	<hr width="800vw" align="center">
+
+	<h2 class="topic"><img src="doc/Equipments/eq11.webp" onmouseover="eImg(this)" onmouseout="fImg(this)" align="left" class="eq">
+		<script>
+	  function eImg(e){
+		e.src = "doc/Equipments/eq12.gif"
+	  }
+	  function fImg(e){
+		e.src = "doc/Equipments/eq11.webp"
+	  }
+	</script>
+	  Cable Biceps Bar</h2>
+	  
+	  
+	 <ul type="disc">
+		
+		<li>Stand up with your torso upright while holding a bar attachment that is attached to a low pulley using a pronated (palms down) 
+		and shoulder width grip. Make sure also that you keep the elbows close to the torso. This will be your starting position.</li>
+		<li>While holding the upper arms stationary, curl the weights while contracting the biceps as you breathe out. Only the forearms should move. 
+		Continue the movement until your biceps are fully contracted and the bar is at shoulder level. Hold the contracted position for a second as you 
+		squeeze the muscle.</li>
+		<li>Slowly begin to bring the bar back to starting position as your breathe in.</li>
+		<li>Repeat for the recommended amount of repetitions.</li>
+		<li>These are great for avoiding the swinging that happens with dumbbells</li>
+		<li>As with all the other movements on this list, you’ll get the most out of this one when you slowly raise and lower the weight. 
+		The cable here helps force you to do that.</li>
+		
+		
+	</ul>
+	<br><br><br><br>
+	<hr width="800vw" align="center">
+
+	<h2 class="topic"><img src="doc/Equipments/eq13.webp" onmouseover="hImg(this)" onmouseout="gImg(this)" align="left" class="eq">
+		<script>
+	  function hImg(a){
+		a.src = "doc/Equipments/eq14.gif"
+	  }
+	  function gImg(a){
+		a.src = "doc/Equipments/eq13.webp"
+	  }
+	</script>
+	  Cable Triceps Bar (or triceps pushdown)</h2>	
+	  
+	  
+	 <ul type="disc">
+		
+		
+		<li>As with the lat pulldown or the cable biceps bar, you can switch the grip here — using a straight bar, a V-bar, 
+		or even a rope — to vary the move.</li>
+		<li>Building strong triceps is uber-important for push-ups and pull-ups and for maintaining balanced strength in your arms.</li>
+		<li>Compact, space-saving design</li>
+		<li>Large back pad for support</li>
+		<li>Included with the gym machine is one high quality triceps/biceps handle in premium steel.</li>
+		<li>This machine is equipped with a loop on the floor beam for attaching an exercise belt. This to provide you with additional stability.</li>
+		<li>Has a stylish design and a small footprint so that it fits anywhere in your gym.</li>
+		<li>PRODUCT WEIGHT: 150 kg / 331 lbs.</li>
+		
+		
+	</ul>
+	<br><br><br><br>
+	<hr width="800vw" align="center">
+
+
+	<h2 class="topic"><img src="doc/Equipments/eq16.png" onmouseover="iImg(this)" onmouseout="jImg(this)" align="left" class="eq">
+		<script>
+	  function iImg(a){
+		a.src = "doc/Equipments/eq17.gif"
+	  }
+	  function jImg(a){
+		a.src = "doc/Equipments/eq16.png"
+	  }
+	</script>
+	  Chest Press</h2>	
+	  
+	  
+	 <ul type="disc">
+		
+		
+		<li>The chest press machine is a similar motion to a push-up</li>
+		<li>If you’re new to working out, building up your chest, your biceps, and even your 
+		triceps will be helpful for doing compound movements later on.</li>
+		<li>Dimensions: (L x W x H)	48 in x 67 in x 72 in (122 cm x 170 cm x 183 cm)gn</li>
+		<li>Recommended Live Area: (L x W x H)	84 in x 115 in x 96 in (213 cm x 292 cm x 244 cm)</li>
+		<li>Weight:	350 lb (158.8 kg)</li>
+		<li>Max User Weight:	350 lb (158.8 kg)</li>
+		<li>Starting Resistance:	7 lb (3.2 kg) per work-arm</li>
+		<li>Max Weight Capacity:	5 - 45 lb (4 - 25 kg) plates/rod</li>
+		
+		
+	</ul>
+	<br><br><br><br><br><br>
+	<hr width="800vw" align="center">
+
+
+	<h2 class="topic"><img src="doc/Equipments/eq18.jpg" onmouseover="kImg(this)" onmouseout="lImg(this)" align="left" class="eq">
+		<script>
+	  function kImg(a){
+		a.src = "doc/Equipments/eq19.gif"
+	  }
+	  function lImg(a){
+		a.src = "doc/Equipments/eq18.jpg"
+	  }
+	</script>
+	  Hanging Leg Raise Machine</h2>	
+	  
+	  
+	 <ul type="disc">
+		
+		
+		<li>DESIGN: Provide an intense ab workout while eliminating strain on the lower back</li>
+		<li>FEATURES: Dip Station handles have oversized handgrips</li>
+		<li>QUALITY CONSTRUCTION: Heavy-gauge steel frames with all-4-side welded construction</li>
+		<li>COMFORTABLE: Durafirm back pads and arm supports reduce fatigue and discomfort</li>
+		<li>Installation not included in the price. Assembly manual supplied along with the equipment can be used to instal the equipment. 
+		Installation service is available at an additional charge, payable directly to the installer.</li>
+		<li>Item Weight:	454 g</li>
+		<li>Item Dimensions LxWxH:	94 x 68.6 x 152.4 Centimeters</li>
+		<li>Material Type:	‎Steel</li>
+		
+		
+	</ul>
+	<br><br><br><br><br><br>
+	<hr width="800vw" align="center">
+
+	<h2 class="topic"><img src="doc/Equipments/eq20.avif" onmouseover="mImg(this)" onmouseout="nImg(this)" align="left" class="eq">
+		<script>
+	  function mImg(a){
+		a.src = "doc/Equipments/eq21.gif"
+	  }
+	  function nImg(a){
+		a.src = "doc/Equipments/eq20.avif"
+	  }
+	</script>
+	  Rowing Machine</h2>	
+	  
+	  
+	 <ul type="disc">
+		
+		
+		<li>Easy set-up, simple storage, major results. </li>
+		<li>The Black Concept 2 RowErg Rower has helped set the new standard for what a 21st-century indoor rowing machine can deliver.</li>
+		<li>The Concept 2 Rower provides one of the more comprehensive, full-body workouts of any fitness machine.</li>
+		<li>Engineered to last a lifetime, it's low impact enough for use in physical rehabilitation centers, and intensive enough to be used by 
+		the world's fittest athletes.</li>
+		<li>Features an advanced PM5 Performance Monitor, improved ergonomically designed handles, adjustable foot-rests, and a flywheel designed for 
+		smooth movement with minimal noise. </li>
+		<li>Product Weight:	57LB</li>
+		<li>Height:	14" (seat)</li>
+		
+		
+	</ul>
+	
+
+	</body>

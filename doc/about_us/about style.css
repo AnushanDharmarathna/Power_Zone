@@ -1,0 +1,30 @@
+section{
+color:#ffffff;
+margin:5px;
+padding:5px;
+box-sizing: border-box;
+}
+
+p{
+size:20px;
+}
+
+.new{
+margin-left:250px;
+margin-top:50px;
+font-size:55px;
+}
+
+
+
+div{
+	background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+
+
+

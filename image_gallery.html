@@ -1,0 +1,150 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Power Zone Fitness - Gallery</title>
+<link rel="stylesheet" type="text/css" href="doc/navigation.css">
+<link rel="shortcut icon" type="image/x-icon" href="doc/icon.png">
+<link rel="stylesheet" type="text/css" href="doc/gym_gallery/css/style.css">
+<link rel="stylesheet" type="text/css" href="doc/gym_gallery/css/styleslides.css">
+<link rel="stylesheet" type="text/css" href="doc/gym_gallery/css/text.css">
+<link rel="stylesheet" type="text/css" href="doc/gym_gallery/css/lightbox.min.css">
+<script type="text/javascript" src="doc/gym_gallery/js/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+
+<div class="topnav">
+    <img class="logo" src="doc/logo.png" width="130" height="25">
+    <a class="active" href="login.php">Log in / Register</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="membership_plans.html">Membership</a>
+    <a href="image_gallery.html">Gallery</a>
+    <a href="supplements.php">Supplements</a>
+    <a href="Equipments.html">Workout Machine</a>
+    <a href="home.html">Home</a>
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">  
+  <div class="imgcontainer">
+  <img src="doc/gym_gallery/images/26.jpg" style="width:100%" height="400">
+  <div class="centered">
+  <div class="sign">
+      <span class="fast-flicker">G</span>all<span class="flicker">e</span>ry
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="mySlides fade">  
+    <div class="imgcontainer">
+  <img src="doc/gym_gallery/images/35.jpg" style="width:100%" height="400">
+  <div class="centered">
+  <div class="sign">
+      <span class="fast-flicker">G</span>all<span class="flicker">e</span>ry
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="imgcontainer">
+  <img src="doc/gym_gallery/images/28.jpg" style="width:100%" height="400">
+  <div class="centered">
+  <div class="sign">
+      <span class="fast-flicker">G</span>all<span class="flicker">e</span>ry
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="imgcontainer">
+  <img src="doc/gym_gallery/images/32.jpg" style="width:100%" height="400">
+  <div class="centered">
+  <div class="sign">
+      <span class="fast-flicker">G</span>all<span class="flicker">e</span>ry
+    </div>
+  </div>
+  </div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+<center>
+<div class="container">
+<div class="gallery">
+<a href="doc/gym_gallery/images/1.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/1small.jpg"></a>
+<a href="doc/gym_gallery/images/2.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/2small.jpg"></a>
+<a href="doc/gym_gallery/images/3.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/3small.jpg"></a>
+<a href="doc/gym_gallery/images/4.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/4small.jpg"></a>
+<a href="doc/gym_gallery/images/5.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/5small.jpg"></a>
+<a href="doc/gym_gallery/images/6.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/6small.jpg"></a>
+<a href="doc/gym_gallery/images/7.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/7small.jpg"></a>
+<a href="doc/gym_gallery/images/8.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/8small.jpg"></a>
+<a href="doc/gym_gallery/images/9.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/9small.jpg"></a>
+<a href="doc/gym_gallery/images/10.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/10small.png"></a>
+<a href="doc/gym_gallery/images/11.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/11small.png"></a>
+<a href="doc/gym_gallery/images/12.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/12small.png"></a>
+<a href="doc/gym_gallery/images/13.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/13small.jpg"></a>
+<a href="doc/gym_gallery/images/14.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/14small.jpg"></a>
+<a href="doc/gym_gallery/images/15.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/15small.jpg"></a>
+<a href="doc/gym_gallery/images/16.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/16small.jpg"></a>
+<a href="doc/gym_gallery/images/17.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/17small.jpg"></a>
+<a href="doc/gym_gallery/images/18.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/18small.jpg"></a>
+<a href="doc/gym_gallery/images/19.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/19small.jpg"></a>
+<a href="doc/gym_gallery/images/20.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/20small.jpg"></a>
+<a href="doc/gym_gallery/images/21.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/21small.jpg"></a>
+<a href="doc/gym_gallery/images/22.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/22small.jpg"></a>
+<a href="doc/gym_gallery/images/23.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/23small.jpg"></a>
+<a href="doc/gym_gallery/images/24.jpg" data-lightbox="mygallery"><img src="doc/gym_gallery/images/24small.jpg"></a>
+</div>
+</div>
+</center>
+<script>
+const gallery = document.querySelectorAll('.gallery');
+const lightboxContainer = document.querySelector('.lightbox-container');
+
+galleryImages.forEach(image => {
+  image.addEventListener('click', () => {
+    lightboxContainer.style.display = 'flex';
+  });
+});
+
+lightboxContainer.addEventListener('click', () => {
+  lightboxContainer.style.display = 'none';
+});
+</script>
+</body>
+</html>

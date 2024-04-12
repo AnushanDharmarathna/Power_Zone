@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Power Zone Fitness - Contact</title>
+    <link rel="shortcut icon" type="image/x-icon" href="doc/Home_Contact/img/icon.png">
+    <script src="https://use.fontawesome.com/20ab91acc4.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="doc/Home_Contact/style2.css">
+	<link rel="stylesheet" type="text/css" href="doc/navigation.css">
+</head>
+
+<body>
+  <div class="topnav">
+    <img class="logo" src="doc/logo.png" width="130" height="25">
+    <a class="active" href="login.php">Log in / Register</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="membership_plans.html">Membership</a>
+    <a href="image_gallery.html">Gallery</a>
+    <a href="Suplements.html">Supplements</a>
+    <a href="Equipments.html">Workout Machine</a>
+    <a href="home.html">Home</a>
+</div>
+  <div class="back">
+  <section id="contact">
+    <h1 class="section-header">Contact US</h1>
+    <div class="contact-wrapper">
+      
+    <form id="contact-form" class="form-horizontal" role="form">
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+        </div>
+      </div>
+
+      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+      
+      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+        <div class="alt-send-button">
+          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+        </div>
+      </button>
+      </form>
+    
+      <div class="direct-contact-container">
+
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place"><a>221B, Berker Streat</a></span></i></li>
+          
+          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:+94773038998" title="Give me a call">+94773038998</a></span></i></li>
+        
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:powerzone@mail.com" title="Send me an email">powerzone@mail.com</a></span></i></li>
+        </ul>
+        <hr>
+        <ul class="social-media-list">
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-youtube" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>       
+        </ul>
+        <hr>
+      </div>
+  </div>
+</section>
+</div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+  <script>
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', (e) =>{
+      cursor.style.left= e.pageX + 'px';
+      cursor.style.top= e.pageY + 'px';
+    })
+  </script>
+
+</body>
+</html>

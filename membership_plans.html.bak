@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Power Zone Fitness - Membership</title>
+<link rel="stylesheet" type="text/css" href="doc/navigation.css">
+<link rel="shortcut icon" type="image/x-icon" href="doc/icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="doc/gym_membership_plans/css/plans.css">
+<link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> 
+</head>
+<body>
+<div class="topnav">
+    <img class="logo" src="doc/logo.png" width="130" height="25">
+    <a class="active" href="login.php">Log in / Register</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="membership_plans.html">Membership</a>
+    <a href="image_gallery.html">Gallery</a>
+    <a href="Suplements.html">Supplements</a>
+    <a href="Equipments.html">Workout Machine</a>
+    <a href="home.html">Home</a>
+</div>
+<div class="vedio-container">
+
+  <div class="overlay"></div>
+
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="doc/gym_membership_plans/image/gym.mp4" type="video/mp4">
+  </video>
+<div class="container">
+   <div class="glow">
+      <div class="neons">
+         <h1><em>membership plans</em></h1>
+      </div>
+   </div>
+</div>
+    
+</div>
+
+<div class="box-container">
+ <div class="box">
+  <h3 class="title">Basic</h3>
+  <h3 class="price">$10<span>/mo</span></h3>
+  <h3 class="month">3 months</h3>
+  <ul class="ul">
+   <li><i class="fa fa-check"></i>weight lifting</li>
+   <li><i class="fa fa-check"></i>cardio</li>
+   <li><i class="fa fa-check"></i>yoga</li>
+   <li><i class="fa fa-check"></i>training</li>
+   <li><i class="fa fa-check"></i>protein powder</li>
+  </ul>
+  <a href="registration.php"><button class="btn">Register Now</button></a>
+ </div>
+ 
+  <div class="box">
+  <h3 class="title">Standard</h3>
+  <h3 class="price">$20<span>/mo</span></h3>
+  <h3 class="month">6 months</h3>
+  <ul class="ul">
+   <li><i class="fa fa-check"></i>weight lifting</li>
+   <li><i class="fa fa-check"></i>cardio</li>
+   <li><i class="fa fa-check"></i>yoga</li>
+   <li><i class="fa fa-check"></i>training</li>
+   <li><i class="fa fa-check"></i>protein powder</li>
+  </ul>
+  <a href="registration.php"><button class="btn">Register Now</button></a>
+ </div>
+ 
+  <div class="box">
+  <h3 class="title">Premium</h3>
+  <h3 class="price">$30<span>/mo</span></h3>
+  <h3 class="month">12 months</h3>
+  <ul class="ul">
+   <li><i class="fa fa-check"></i>weight lifting</li>
+   <li><i class="fa fa-check"></i>cardio</li>
+   <li><i class="fa fa-check"></i>yoga</li>
+   <li><i class="fa fa-check"></i>training</li>
+   <li><i class="fa fa-check"></i>protein powder</li>
+  </ul>
+  <a href="registration.php"><button class="btn">Register Now</button></a>
+ </div>
+</div>
+
+</body>
+</html>

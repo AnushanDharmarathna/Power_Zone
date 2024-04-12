@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Power Zone Fitness</title>
+	<link rel="stylesheet" type="text/css" href="doc/Home_Contact/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="doc/Home_Contact/img/icon.png">
+</head>
+<body>
+
+	<div class="hero">
+		
+		<video autoplay loop muted plays-inline class="back-video">
+			<source src="doc/Home_Contact/img/fitness.mp4" type="video/mp4">			
+		</video>
+
+		<nav>
+			<img src="doc/Home_Contact/img/logo.png" class="logo">
+			<ul>
+				<li><a href="home.html">HOME</a></li>
+				<li><a href="Equipments.html">WORKOUT MACHINE</a></li>
+				<li><a href="supplements.php">SUPPLEMENTS</a></li>
+				<li><a href="image_gallery.html">GALLERY</a></li>
+				<li><a href="membership_plans.html">MEMBERSHIP</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+				<div class="cursor"></div>
+			</ul>
+			<a href="login.php" class="btn">Log in / Register</a>
+		</nav>
+		<div class="content">
+			<h1>HI THIS IS FITNESS GYM OF</h1>
+			<p>POWER ZONE</p>
+			<a href="https://www.facebook.com" ><img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" src="doc/Home_Contact/img/facebook.png" class="img"></a>
+			<a href="https://www.instagram.com" ><img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" src="doc/Home_Contact/img/instagram.png" class="img"></a>
+			<a href="https://www.youtube.com" ><img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" src="doc/Home_Contact/img/youtube.png" class="img"></a>
+			<a href="https://www.twitter.com" ><img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" src="doc/Home_Contact/img/twitter.png" class="img"></a>
+		</div>
+	</div>
+
+	<script>
+		const cursor = document.querySelector('.cursor');
+		document.addEventListener('mousemove', (e) =>{
+			cursor.style.left= e.pageX + 'px';
+			cursor.style.top= e.pageY + 'px';
+		})
+
+		function bigImg(x) {
+  			x.style.height = "70px";
+  			x.style.width = "70px";
+		}
+
+		function normalImg(x) {
+  			x.style.height = "60px";
+  			x.style.width = "60px";
+		}
+	</script>
+
+</body>
+</html>
